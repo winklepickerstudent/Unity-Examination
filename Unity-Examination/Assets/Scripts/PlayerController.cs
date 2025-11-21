@@ -26,7 +26,14 @@ public class PlayerController : MonoBehaviour
 
 	public void OnMove(InputAction.CallbackContext context)
 	{
-		Debug.Log("Gets input");
 		moveInput = context.ReadValue<Vector2>();
+		if (moveInput.x == 0)
+		{
+			animator.SetBool("Moving", true);
+		}
+		else 
+		{
+			animator.SetBool("Moving", false);
+		}
 	}
 }

@@ -429,7 +429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1000
   maxSpeed: 100
-  animator: {fileID: 0}
+  animator: {fileID: 4202743180726687865}
   rb: {fileID: 5887576193376838860}
 --- !u!114 &6295348546849548512
 MonoBehaviour:
