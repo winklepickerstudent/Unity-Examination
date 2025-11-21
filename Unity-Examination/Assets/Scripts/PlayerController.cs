@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] Rigidbody2D rb;
 	[SerializeField] Vector2 projectileSpawnPoint;
 	[SerializeField] GameObject projectile;
+	[SerializeField] AudioSource projectileSFX;
+
 
 	private Vector2 moveInput;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -41,5 +43,6 @@ public class PlayerController : MonoBehaviour
 	public void OnAttack(InputAction.CallbackContext context)
 	{
 		Instantiate(projectile, new Vector3(projectileSpawnPoint.x, projectileSpawnPoint.y, 0) + transform.position, Quaternion.identity);
+		projectileSFX.Play();
 	}
 }
