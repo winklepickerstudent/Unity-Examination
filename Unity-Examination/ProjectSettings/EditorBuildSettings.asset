@@ -6,6 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Settings/Scenes/2D URP Scene Template.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Menu.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Story text wall.unity
+    guid: 915dff12be7a47740ad4f5a3c4085fdd
+  - enabled: 1
+    path: Assets/Scenes/Platformer.unity
+    guid: fbde45100942a464b9ef8d94cdeb7c6e
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
