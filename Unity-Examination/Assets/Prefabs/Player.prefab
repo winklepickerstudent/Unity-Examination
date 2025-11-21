@@ -431,6 +431,8 @@ MonoBehaviour:
   maxSpeed: 100
   animator: {fileID: 4202743180726687865}
   rb: {fileID: 5887576193376838860}
+  projectileSpawnPoint: {x: 1, y: 0}
+  projectile: {fileID: 1309011042833668553, guid: 8c5bb4ddff4694e47afdc89305a86731, type: 3}
 --- !u!114 &6295348546849548512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,6 +474,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 13645cc1-51fa-472a-aed5-c6a576c1b283
     m_ActionName: 'Player controller/New action[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5697586602231940845}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnAttack
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: e5fa3888-12c8-4389-bca0-dad3c9c2acc4
+    m_ActionName: 'Player controller/Attack[/Keyboard/space]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player controller

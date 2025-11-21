@@ -6,7 +6,8 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] float speed, maxSpeed;
 	[SerializeField] Animator animator;
 	[SerializeField] Rigidbody2D rb;
-
+	[SerializeField] Vector2 projectileSpawnPoint;
+	[SerializeField] GameObject projectile;
 
 	private Vector2 moveInput;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -35,5 +36,10 @@ public class PlayerController : MonoBehaviour
 		{
 			animator.SetBool("Moving", false);
 		}
+	}
+
+	public void OnAttack(InputAction.CallbackContext context)
+	{
+		Instantiate(projectile, new Vector3(projectileSpawnPoint.x, projectileSpawnPoint.y, 0) + transform.position, Quaternion.identity);
 	}
 }
